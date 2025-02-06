@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #f44336;
+}
+
+body {
+    margin: 0;
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    margin: 0 0 50px;
+    background-color: white;
+}
+
+.guess-game {
+    text-align: center;
+    width: 1000px;
+    margin: 20px auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.guess-game h2 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.game-area {
+    width: 47%;
+}
+
+.key-colors {
+    width: 35%;
+}
+
+.key-color {
+    width: 100%;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 6px;
+    text-align: left;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.key-color:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.key-color .color {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.key-color .yes {
+    background-color: orange;
+}
+
+.key-color .not-place {
+    background-color: lightseagreen;
+}
+
+.key-color .no {
+    background-color: #333;
+}
+
+.control button {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    padding: 13px 10px;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.control {
+    display: flex;
+    justify-content: space-between;
+}
+button.check {
+    background-color: var(--primary-color);
+    width: 77%;
+}
+button.hint {
+    background-color: #259399;
+    width: 22%;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: #111;
+}
+
+.inputs {
+    margin-bottom: 10px;
+}
+
+.inputs > div {
+    text-align: left;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.inputs input {
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+    outline: none;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    font-size: 30px;
+    text-align: center;
+    background-color: white;
+    caret-color: var(--primary-color);
+}
+
+.inputs input.yes {
+    background-color: orange;
+    border-bottom: 2px solid orange;
+    color: white;
+}
+
+.inputs input.no {
+    background-color: #333;
+    border-bottom: 2px solid #333;
+    color: white;
+}
+
+.inputs input.not-place {
+    background-color: lightseagreen;
+    border-bottom: 2px solid lightseagreen;
+    color: white;
+}
+
+.disabled-input {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.inputs input:nth-child(2) {
+    margin-left: 20px;
+}
+
+.message {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 10px;
+}
