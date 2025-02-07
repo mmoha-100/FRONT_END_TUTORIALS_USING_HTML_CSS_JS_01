@@ -192,7 +192,7 @@ function handleGuesses() {
     }
 }
 
-// Dry Functions:
+// DRY Functions:
 function convertHintButton(color, msg) {
     hintBtn.disabled = false;
     hintBtn.innerHTML = msg;
